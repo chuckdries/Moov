@@ -4,16 +4,20 @@
         ""
     ],
     "companyName": "kiicrossroad@gmail.com",
-    "longName": "Testing",
+    "longName": "watchface",
     "projectType": "native",
     "resources": {
         "media": []
     },
     "sdkVersion": "3",
-    "shortName": "Testing",
-    "uuid": "6d8348bd-be7d-4ede-8bae-89d8e8507a47",
+    "shortName": "watchface",
+    "targetPlatforms": [
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "401a9ece-3a14-4ca1-983a-5d05124e0f8f",
     "versionLabel": "1.0",
     "watchapp": {
-        "watchface": false
+        "watchface": true
     }
 }
