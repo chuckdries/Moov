@@ -11,9 +11,13 @@
     },
     "sdkVersion": "3",
     "shortName": "Testing",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
     "uuid": "6d8348bd-be7d-4ede-8bae-89d8e8507a47",
     "versionLabel": "1.0",
     "watchapp": {
-        "watchface": false
+        "watchface": true
     }
 }

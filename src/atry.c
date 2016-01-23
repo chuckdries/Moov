@@ -15,7 +15,8 @@
 static Window *s_main_window;
 
 //setup text layer
-static TextLayer *s_time_layer;
+static TextLayer *s_time_layer, *s_date_layer;
+static GFont s_time_font, s_date_font;
 static GPath *s_my_path_ptr = NULL;
 
 static const GPathInfo BOLT_PATH_INFO = {
@@ -33,7 +34,7 @@ void my_layer_update_proc(Layer *my_layer, GContext* ctx) {
   gpath_draw_outline(ctx, s_my_path_ptr);
 }
 
-void setup_my_path(void) {
+void setup_my_path(void){
   s_my_path_ptr = gpath_create(&BOLT_PATH_INFO);
   // Rotate 15 degrees:
   gpath_rotate_to(s_my_path_ptr, TRIG_MAX_ANGLE / 360 * 15);
@@ -52,7 +53,7 @@ static void update_time() {
                                           "%H:%M" : "%I:%M", tick_time);
 
   // Display this time on the TextLayer
-  text_layer_set_text(s_time_layer, s_buffer);
+   text_layer_set_text(s_time_layer, s_buffer);
 }
 
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
@@ -136,16 +137,30 @@ static void main_window_load(Window *window) {
 
   // Add it as a child layer to the Window's root layer
   layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
+  
+  //Create Date text layer
+  s_date_layer = text_layer_create(GRect(0, 120, 144, 30));
+  text_layer_set_text_color(s_date_layer, GColorBlack);
+  text_layer_set_background_color(s_date_layer, GColorClear);
+  text_layer_set_font(s_date_layer, fonts_get_system_font(FONT_KEY_BITHAM_34_MEDIUM_NUMBERS));
+  text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
+     
+  //Add it as a child layer to the Window's root layer
+  layer_add_child(window_layer, text_layer_get_layer(s_date_layer));
 
   // ******Create Animation Layer
   s_box_layer = layer_create(GRect(0, 0, BOX_SIZE, BOX_SIZE));
   layer_set_update_proc(s_box_layer, update_proc);
+  
+  //Add as a child layer
   layer_add_child(window_layer, s_box_layer);
 }
 
 static void main_window_unload(Window *window) {
   //destroy text layer
   text_layer_destroy(s_time_layer);
+  //destroy date layer
+  text_layer_destroy(s_date_layer);
   // Destroy Layer
   layer_destroy(s_box_layer);
 }
