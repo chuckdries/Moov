@@ -1,0 +1,22 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "rkknoche@yahoo.com",
+    "longName": "Mood",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "Mood",
+    "targetPlatforms": [
+        "basalt"
+    ],
+    "uuid": "4d59a08a-1145-4c25-af58-6a6fbf1410e1",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
