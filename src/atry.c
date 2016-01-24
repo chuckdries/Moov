@@ -8,11 +8,12 @@
 #include <pebble.h>
 
 static Window *s_main_window;
+static Layer *s_layer;
+static Layer *g_layer;
+int x = 0;
 
 //setup text layer
 static TextLayer *s_time_layer, *s_date_layer;
-static GPath *s_my_path_ptr = NULL;
-
 static void update_time() {
   // Get a tm structure
   time_t temp = time(NULL); 
@@ -23,25 +24,38 @@ static void update_time() {
   static char d_buffer[8];
   strftime(d_buffer, sizeof(d_buffer), clock_is_24h_style() ?
                                           "%H:%M" : "%I:%M", tick_time);
-  
   // Display this time on the TextLayer
   text_layer_set_text(s_time_layer, s_buffer);
   
   strftime(s_buffer, sizeof(s_buffer), "%a %d %b", tick_time);
   text_layer_set_text(s_date_layer, d_buffer);
+  
 }
-
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
   update_time();
+  if(x<=120)//from 0 to 120 minutes, increment x so the rectangle width grows
+  {
+    x=x+1;
+  }
+  else
+    x=0;//reset babr back to zero.
 }
-
 static void main_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
-
   GRect bounds = layer_get_bounds(window_layer);
-// Create the TextLayer with specific bounds
+ 
+  s_layer = layer_create(GRect(12+x, 108, 120, 20));
+  g_layer = layer_create(GRect(12, 108, x, 20));
+  
+ // Create the TextLayer with specific bounds
   s_time_layer = text_layer_create(
       GRect(5, PBL_IF_ROUND_ELSE(0,20), bounds.size.w, 80));
+  /**layer_set_update_proc(s_layer, update_proc);
+  graphics_context_set_fill_color(ctx, GColorKellyGreen);
+  graphics_fill_rect(ctx, GRect(12+x, 108, 120, 20), 2, GCornersAll);
+  graphics_context_set_fill_color(ctx, GColorSunsetOrange);
+  graphics_fill_rect(ctx, GRect(12, 108, x, 20), 2, GCornersAll);*/
+  
 
   // Improve the layout to be more like a watchface
   text_layer_set_background_color(s_time_layer, GColorBlue);
@@ -62,26 +76,24 @@ static void main_window_load(Window *window) {
      
   //Add it as a child layer to the Window's root layer
   layer_add_child(window_layer, text_layer_get_layer(s_date_layer));
-
-  /*// ******Create Animation Layer
-  s_box_layer = layer_create(GRect(10, 120, 150, 30));
-  layer_set_update_proc(s_box_layer, update_proc);
-  
-  //Add as a child layer
-  layer_add_child(window_layer, s_box_layer);*/
 }
 
+static void update_proc(Layer *layer, GContext *ctx) {
+  graphics_context_set_fill_color(ctx, GColorKellyGreen);
+  graphics_fill_rect(ctx, layer_get_bounds(s_layer), 4, GCornersAll);
+}
 static void main_window_unload(Window *window) {
-  //destroy text layer
+  //destroy text and date layers
   text_layer_destroy(s_time_layer);
-  //destroy date layer
   text_layer_destroy(s_date_layer);
+  layer_destroy(s_layer);
+  layer_destroy(g_layer);
 }
 static void init(void) {
   // Create main Window element and assign to pointer
   s_main_window = window_create();
 
-  window_set_background_color(s_main_window, GColorBlack);
+  window_set_background_color(s_main_window, GColorClear);
 
   // Set handlers to manage the elements inside the Window
   window_set_window_handlers(s_main_window, (WindowHandlers) {
@@ -98,7 +110,6 @@ static void init(void) {
   // Register with TickTimerService
   tick_timer_service_subscribe(MINUTE_UNIT, tick_handler);
  }
-
 static void deinit(void) {
   // Destroy main Window
   window_destroy(s_main_window);

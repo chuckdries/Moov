@@ -7,14 +7,7 @@
     "longName": "Testing",
     "projectType": "native",
     "resources": {
-        "media": [
-            {
-                "file": "fonts/BebasNeue.otf",
-                "name": "BEBAS_NEUE_40",
-                "targetPlatforms": null,
-                "type": "font"
-            }
-        ]
+        "media": []
     },
     "sdkVersion": "3",
     "shortName": "Testing",
