@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5711F2961C5428240039345F /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711F2951C5428240039345F /* BarGraphView.swift */; };
+		571FEBDF1C5375A500E14BE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FEBDE1C5375A500E14BE9 /* AppDelegate.swift */; };
+		571FEBE11C5375A500E14BE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FEBE01C5375A500E14BE9 /* ViewController.swift */; };
+		571FEBE41C5375A500E14BE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571FEBE21C5375A500E14BE9 /* Main.storyboard */; };
+		571FEBE61C5375A500E14BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571FEBE51C5375A500E14BE9 /* Assets.xcassets */; };
+		571FEBE91C5375A500E14BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571FEBE71C5375A500E14BE9 /* LaunchScreen.storyboard */; };
+		571FEBF41C5375A500E14BE9 /* moovTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FEBF31C5375A500E14BE9 /* moovTests.swift */; };
+		571FEBFF1C5375A500E14BE9 /* moovUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FEBFE1C5375A500E14BE9 /* moovUITests.swift */; };
+		571FEC041C5375A500E14BE9 /* moov WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 571FEC031C5375A500E14BE9 /* moov WatchKit App.app */; };
+		571FEC0A1C5375A500E14BE9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571FEC081C5375A500E14BE9 /* Interface.storyboard */; };
+		571FEC0C1C5375A500E14BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571FEC0B1C5375A500E14BE9 /* Assets.xcassets */; };
+		571FEC131C5375A500E14BE9 /* moov WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 571FEC121C5375A500E14BE9 /* moov WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		571FEC1A1C5375A500E14BE9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FEC191C5375A500E14BE9 /* InterfaceController.swift */; };
+		571FEC1C1C5375A500E14BE9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FEC1B1C5375A500E14BE9 /* ExtensionDelegate.swift */; };
+		571FEC1E1C5375A500E14BE9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FEC1D1C5375A500E14BE9 /* NotificationController.swift */; };
+		571FEC201C5375A500E14BE9 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FEC1F1C5375A500E14BE9 /* GlanceController.swift */; };
+		571FEC221C5375A500E14BE9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FEC211C5375A500E14BE9 /* ComplicationController.swift */; };
+		571FEC241C5375A500E14BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571FEC231C5375A500E14BE9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		571FEBF01C5375A500E14BE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 571FEBD31C5375A500E14BE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 571FEBDA1C5375A500E14BE9;
+			remoteInfo = moov;
+		};
+		571FEBFB1C5375A500E14BE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 571FEBD31C5375A500E14BE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 571FEBDA1C5375A500E14BE9;
+			remoteInfo = moov;
+		};
+		571FEC051C5375A500E14BE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 571FEBD31C5375A500E14BE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 571FEC021C5375A500E14BE9;
+			remoteInfo = "moov WatchKit App";
+		};
+		571FEC141C5375A500E14BE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 571FEBD31C5375A500E14BE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 571FEC111C5375A500E14BE9;
+			remoteInfo = "moov WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		571FEC2B1C5375A500E14BE9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				571FEC131C5375A500E14BE9 /* moov WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571FEC2F1C5375A500E14BE9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				571FEC041C5375A500E14BE9 /* moov WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5711F2931C5427270039345F /* moov WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "moov WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		5711F2951C5428240039345F /* BarGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
+		571FEBDB1C5375A500E14BE9 /* moov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moov.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		571FEBDE1C5375A500E14BE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		571FEBE01C5375A500E14BE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		571FEBE31C5375A500E14BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		571FEBE51C5375A500E14BE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		571FEBE81C5375A500E14BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		571FEBEA1C5375A500E14BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571FEBEF1C5375A500E14BE9 /* moovTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moovTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		571FEBF31C5375A500E14BE9 /* moovTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moovTests.swift; sourceTree = "<group>"; };
+		571FEBF51C5375A500E14BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571FEBFA1C5375A500E14BE9 /* moovUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moovUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		571FEBFE1C5375A500E14BE9 /* moovUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moovUITests.swift; sourceTree = "<group>"; };
+		571FEC001C5375A500E14BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571FEC031C5375A500E14BE9 /* moov WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "moov WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		571FEC091C5375A500E14BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		571FEC0B1C5375A500E14BE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		571FEC0D1C5375A500E14BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571FEC121C5375A500E14BE9 /* moov WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "moov WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		571FEC181C5375A500E14BE9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		571FEC191C5375A500E14BE9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		571FEC1B1C5375A500E14BE9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		571FEC1D1C5375A500E14BE9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		571FEC1F1C5375A500E14BE9 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		571FEC211C5375A500E14BE9 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		571FEC231C5375A500E14BE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		571FEC251C5375A500E14BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		571FEBD81C5375A500E14BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571FEBEC1C5375A500E14BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571FEBF71C5375A500E14BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571FEC0F1C5375A500E14BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		571FEBD21C5375A500E14BE9 = {
+			isa = PBXGroup;
+			children = (
+				571FEBDD1C5375A500E14BE9 /* moov */,
+				571FEBF21C5375A500E14BE9 /* moovTests */,
+				571FEBFD1C5375A500E14BE9 /* moovUITests */,
+				571FEC071C5375A500E14BE9 /* moov WatchKit App */,
+				571FEC161C5375A500E14BE9 /* moov WatchKit Extension */,
+				571FEBDC1C5375A500E14BE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		571FEBDC1C5375A500E14BE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				571FEBDB1C5375A500E14BE9 /* moov.app */,
+				571FEBEF1C5375A500E14BE9 /* moovTests.xctest */,
+				571FEBFA1C5375A500E14BE9 /* moovUITests.xctest */,
+				571FEC031C5375A500E14BE9 /* moov WatchKit App.app */,
+				571FEC121C5375A500E14BE9 /* moov WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		571FEBDD1C5375A500E14BE9 /* moov */ = {
+			isa = PBXGroup;
+			children = (
+				571FEBDE1C5375A500E14BE9 /* AppDelegate.swift */,
+				571FEBE01C5375A500E14BE9 /* ViewController.swift */,
+				571FEBE21C5375A500E14BE9 /* Main.storyboard */,
+				571FEBE51C5375A500E14BE9 /* Assets.xcassets */,
+				571FEBE71C5375A500E14BE9 /* LaunchScreen.storyboard */,
+				571FEBEA1C5375A500E14BE9 /* Info.plist */,
+			);
+			path = moov;
+			sourceTree = "<group>";
+		};
+		571FEBF21C5375A500E14BE9 /* moovTests */ = {
+			isa = PBXGroup;
+			children = (
+				571FEBF31C5375A500E14BE9 /* moovTests.swift */,
+				571FEBF51C5375A500E14BE9 /* Info.plist */,
+			);
+			path = moovTests;
+			sourceTree = "<group>";
+		};
+		571FEBFD1C5375A500E14BE9 /* moovUITests */ = {
+			isa = PBXGroup;
+			children = (
+				571FEBFE1C5375A500E14BE9 /* moovUITests.swift */,
+				571FEC001C5375A500E14BE9 /* Info.plist */,
+			);
+			path = moovUITests;
+			sourceTree = "<group>";
+		};
+		571FEC071C5375A500E14BE9 /* moov WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				571FEC081C5375A500E14BE9 /* Interface.storyboard */,
+				571FEC0B1C5375A500E14BE9 /* Assets.xcassets */,
+				571FEC0D1C5375A500E14BE9 /* Info.plist */,
+				5711F2931C5427270039345F /* moov WatchKit App-Bridging-Header.h */,
+				5711F2951C5428240039345F /* BarGraphView.swift */,
+			);
+			path = "moov WatchKit App";
+			sourceTree = "<group>";
+		};
+		571FEC161C5375A500E14BE9 /* moov WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				571FEC191C5375A500E14BE9 /* InterfaceController.swift */,
+				571FEC1B1C5375A500E14BE9 /* ExtensionDelegate.swift */,
+				571FEC1D1C5375A500E14BE9 /* NotificationController.swift */,
+				571FEC1F1C5375A500E14BE9 /* GlanceController.swift */,
+				571FEC211C5375A500E14BE9 /* ComplicationController.swift */,
+				571FEC231C5375A500E14BE9 /* Assets.xcassets */,
+				571FEC251C5375A500E14BE9 /* Info.plist */,
+				571FEC171C5375A500E14BE9 /* Supporting Files */,
+			);
+			path = "moov WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		571FEC171C5375A500E14BE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				571FEC181C5375A500E14BE9 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		571FEBDA1C5375A500E14BE9 /* moov */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 571FEC301C5375A500E14BE9 /* Build configuration list for PBXNativeTarget "moov" */;
+			buildPhases = (
+				571FEBD71C5375A500E14BE9 /* Sources */,
+				571FEBD81C5375A500E14BE9 /* Frameworks */,
+				571FEBD91C5375A500E14BE9 /* Resources */,
+				571FEC2F1C5375A500E14BE9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				571FEC061C5375A500E14BE9 /* PBXTargetDependency */,
+			);
+			name = moov;
+			productName = moov;
+			productReference = 571FEBDB1C5375A500E14BE9 /* moov.app */;
+			productType = "com.apple.product-type.application";
+		};
+		571FEBEE1C5375A500E14BE9 /* moovTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 571FEC331C5375A500E14BE9 /* Build configuration list for PBXNativeTarget "moovTests" */;
+			buildPhases = (
+				571FEBEB1C5375A500E14BE9 /* Sources */,
+				571FEBEC1C5375A500E14BE9 /* Frameworks */,
+				571FEBED1C5375A500E14BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				571FEBF11C5375A500E14BE9 /* PBXTargetDependency */,
+			);
+			name = moovTests;
+			productName = moovTests;
+			productReference = 571FEBEF1C5375A500E14BE9 /* moovTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		571FEBF91C5375A500E14BE9 /* moovUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 571FEC361C5375A500E14BE9 /* Build configuration list for PBXNativeTarget "moovUITests" */;
+			buildPhases = (
+				571FEBF61C5375A500E14BE9 /* Sources */,
+				571FEBF71C5375A500E14BE9 /* Frameworks */,
+				571FEBF81C5375A500E14BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				571FEBFC1C5375A500E14BE9 /* PBXTargetDependency */,
+			);
+			name = moovUITests;
+			productName = moovUITests;
+			productReference = 571FEBFA1C5375A500E14BE9 /* moovUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		571FEC021C5375A500E14BE9 /* moov WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 571FEC2C1C5375A500E14BE9 /* Build configuration list for PBXNativeTarget "moov WatchKit App" */;
+			buildPhases = (
+				571FEC011C5375A500E14BE9 /* Resources */,
+				571FEC2B1C5375A500E14BE9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				571FEC151C5375A500E14BE9 /* PBXTargetDependency */,
+			);
+			name = "moov WatchKit App";
+			productName = "moov WatchKit App";
+			productReference = 571FEC031C5375A500E14BE9 /* moov WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		571FEC111C5375A500E14BE9 /* moov WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 571FEC281C5375A500E14BE9 /* Build configuration list for PBXNativeTarget "moov WatchKit Extension" */;
+			buildPhases = (
+				571FEC0E1C5375A500E14BE9 /* Sources */,
+				571FEC0F1C5375A500E14BE9 /* Frameworks */,
+				571FEC101C5375A500E14BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "moov WatchKit Extension";
+			productName = "moov WatchKit Extension";
+			productReference = 571FEC121C5375A500E14BE9 /* moov WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		571FEBD31C5375A500E14BE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Chuck Dries";
+				TargetAttributes = {
+					571FEBDA1C5375A500E14BE9 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 775SDZM9Q3;
+					};
+					571FEBEE1C5375A500E14BE9 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 775SDZM9Q3;
+						TestTargetID = 571FEBDA1C5375A500E14BE9;
+					};
+					571FEBF91C5375A500E14BE9 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 775SDZM9Q3;
+						TestTargetID = 571FEBDA1C5375A500E14BE9;
+					};
+					571FEC021C5375A500E14BE9 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 775SDZM9Q3;
+					};
+					571FEC111C5375A500E14BE9 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 775SDZM9Q3;
+					};
+				};
+			};
+			buildConfigurationList = 571FEBD61C5375A500E14BE9 /* Build configuration list for PBXProject "moov" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 571FEBD21C5375A500E14BE9;
+			productRefGroup = 571FEBDC1C5375A500E14BE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				571FEBDA1C5375A500E14BE9 /* moov */,
+				571FEBEE1C5375A500E14BE9 /* moovTests */,
+				571FEBF91C5375A500E14BE9 /* moovUITests */,
+				571FEC021C5375A500E14BE9 /* moov WatchKit App */,
+				571FEC111C5375A500E14BE9 /* moov WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		571FEBD91C5375A500E14BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571FEBE91C5375A500E14BE9 /* LaunchScreen.storyboard in Resources */,
+				571FEBE61C5375A500E14BE9 /* Assets.xcassets in Resources */,
+				571FEBE41C5375A500E14BE9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571FEBED1C5375A500E14BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571FEBF81C5375A500E14BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571FEC011C5375A500E14BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571FEC0C1C5375A500E14BE9 /* Assets.xcassets in Resources */,
+				571FEC0A1C5375A500E14BE9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571FEC101C5375A500E14BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571FEC241C5375A500E14BE9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		571FEBD71C5375A500E14BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5711F2961C5428240039345F /* BarGraphView.swift in Sources */,
+				571FEBE11C5375A500E14BE9 /* ViewController.swift in Sources */,
+				571FEBDF1C5375A500E14BE9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571FEBEB1C5375A500E14BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571FEBF41C5375A500E14BE9 /* moovTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571FEBF61C5375A500E14BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571FEBFF1C5375A500E14BE9 /* moovUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571FEC0E1C5375A500E14BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571FEC1E1C5375A500E14BE9 /* NotificationController.swift in Sources */,
+				571FEC1C1C5375A500E14BE9 /* ExtensionDelegate.swift in Sources */,
+				571FEC221C5375A500E14BE9 /* ComplicationController.swift in Sources */,
+				571FEC1A1C5375A500E14BE9 /* InterfaceController.swift in Sources */,
+				571FEC201C5375A500E14BE9 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		571FEBF11C5375A500E14BE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 571FEBDA1C5375A500E14BE9 /* moov */;
+			targetProxy = 571FEBF01C5375A500E14BE9 /* PBXContainerItemProxy */;
+		};
+		571FEBFC1C5375A500E14BE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 571FEBDA1C5375A500E14BE9 /* moov */;
+			targetProxy = 571FEBFB1C5375A500E14BE9 /* PBXContainerItemProxy */;
+		};
+		571FEC061C5375A500E14BE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 571FEC021C5375A500E14BE9 /* moov WatchKit App */;
+			targetProxy = 571FEC051C5375A500E14BE9 /* PBXContainerItemProxy */;
+		};
+		571FEC151C5375A500E14BE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 571FEC111C5375A500E14BE9 /* moov WatchKit Extension */;
+			targetProxy = 571FEC141C5375A500E14BE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		571FEBE21C5375A500E14BE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				571FEBE31C5375A500E14BE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		571FEBE71C5375A500E14BE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				571FEBE81C5375A500E14BE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		571FEC081C5375A500E14BE9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				571FEC091C5375A500E14BE9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		571FEC261C5375A500E14BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		571FEC271C5375A500E14BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		571FEC291C5375A500E14BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "moov WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuckdries.moov.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		571FEC2A1C5375A500E14BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "moov WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuckdries.moov.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		571FEC2D1C5375A500E14BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = moov_WatchKit_Extension;
+				INFOPLIST_FILE = "moov WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuckdries.moov.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "moov WatchKit App/moov WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		571FEC2E1C5375A500E14BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = moov_WatchKit_Extension;
+				INFOPLIST_FILE = "moov WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuckdries.moov.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "moov WatchKit App/moov WatchKit App-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		571FEC311C5375A500E14BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = moov/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuckdries.moov;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		571FEC321C5375A500E14BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = moov/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuckdries.moov;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		571FEC341C5375A500E14BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = moovTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuckdries.moovTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/moov.app/moov";
+			};
+			name = Debug;
+		};
+		571FEC351C5375A500E14BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = moovTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuckdries.moovTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/moov.app/moov";
+			};
+			name = Release;
+		};
+		571FEC371C5375A500E14BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = moovUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuckdries.moovUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = moov;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		571FEC381C5375A500E14BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = moovUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chuckdries.moovUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = moov;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		571FEBD61C5375A500E14BE9 /* Build configuration list for PBXProject "moov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571FEC261C5375A500E14BE9 /* Debug */,
+				571FEC271C5375A500E14BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		571FEC281C5375A500E14BE9 /* Build configuration list for PBXNativeTarget "moov WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571FEC291C5375A500E14BE9 /* Debug */,
+				571FEC2A1C5375A500E14BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		571FEC2C1C5375A500E14BE9 /* Build configuration list for PBXNativeTarget "moov WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571FEC2D1C5375A500E14BE9 /* Debug */,
+				571FEC2E1C5375A500E14BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		571FEC301C5375A500E14BE9 /* Build configuration list for PBXNativeTarget "moov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571FEC311C5375A500E14BE9 /* Debug */,
+				571FEC321C5375A500E14BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		571FEC331C5375A500E14BE9 /* Build configuration list for PBXNativeTarget "moovTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571FEC341C5375A500E14BE9 /* Debug */,
+				571FEC351C5375A500E14BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		571FEC361C5375A500E14BE9 /* Build configuration list for PBXNativeTarget "moovUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571FEC371C5375A500E14BE9 /* Debug */,
+				571FEC381C5375A500E14BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 571FEBD31C5375A500E14BE9 /* Project object */;
+}
