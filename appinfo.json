@@ -3,20 +3,28 @@
     "capabilities": [
         ""
     ],
-    "companyName": "rkknoche@yahoo.com",
-    "longName": "Mood",
+    "companyName": "kiicrossroad@gmail.com",
+    "longName": "Testing",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "fonts/BebasNeue.otf",
+                "name": "BEBAS_NEUE_40",
+                "targetPlatforms": null,
+                "type": "font"
+            }
+        ]
     },
     "sdkVersion": "3",
-    "shortName": "Mood",
+    "shortName": "Testing",
     "targetPlatforms": [
+        "aplite",
         "basalt"
     ],
-    "uuid": "4d59a08a-1145-4c25-af58-6a6fbf1410e1",
+    "uuid": "6d8348bd-be7d-4ede-8bae-89d8e8507a47",
     "versionLabel": "1.0",
     "watchapp": {
-        "watchface": false
+        "watchface": true
     }
 }
